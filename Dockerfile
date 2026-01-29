@@ -8,7 +8,8 @@ WORKDIR $HOME
 
 ######### Customize Container Here ###########
 # 1. update system
-RUN apt-get update && apt-get upgrade -y && rm -rf /var/lib/apt/lists/*
+COPY setup_env.sh /tmp/
+RUN /tmp/setup_env.sh && rm /tmp/setup_env.sh
 
 # 2. update UI
 COPY theme /tmp/theme
