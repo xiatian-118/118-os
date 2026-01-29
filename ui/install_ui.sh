@@ -1,31 +1,33 @@
 #!/usr/bin/env bash
 set -ex
 
+# 定义变量
+KDP="/home/kasm-default-profile"
+TMP_UI="/tmp/ui"
+
+# 创建目录
+mkdir -p "$KDP/.config"
+
 # 复制主题
-cp -r /tmp/theme/Orchis-Dark* /usr/share/themes/
-mkdir -p /home/kasm-default-profile/.config/gtk-4.0
-cp -r /tmp/theme/Orchis-Dark/gtk-4.0/* /home/kasm-default-profile/.config/gtk-4.0/
+cp -af "$TMP_UI/themes/." /usr/share/themes/
+cp -af "$TMP_UI/themes/Orchis-Dark/gtk-4.0" "$KDP/.config/"
 
 # 复制图标
-mkdir -p /usr/share/icons
-tar -xzvf /tmp/theme/icons.tar.gz -C /usr/share/icons/
+tar -xzvf "$TMP_UI/icons/icons.tar.gz" -C /usr/share/icons/
 
 # 复制壁纸
-cp -rf /tmp/theme/wallpapers/* /usr/share/backgrounds/
+cp -af "$TMP_UI/wallpapers/." /usr/share/backgrounds/
 
-# 用户微调配置
-mkdir -p /home/kasm-default-profile/.asset
-cp -rf /tmp/theme/default-profile/asset/* /home/kasm-default-profile/.asset/
-cp -rf /tmp/theme/default-profile/config/* /home/kasm-default-profile/.config/
-mkdir -p /home/kasm-default-profile/.genmon-plugin
-cp -rf /tmp/theme/default-profile/genmon-plugin/* /home/kasm-default-profile/.genmon-plugin/
+# 复制配置
+cp -af "$TMP_UI/kasm-default-profile/." "$KDP/"
 
-# 安装字体
-FONT_DEST="/usr/share/fonts/truetype/apple-fonts"
-mkdir -p "$FONT_DEST"
-cp -f /tmp/theme/fonts/*.ttf "$FONT_DEST/"
-cp -f /tmp/theme/fonts/*.ttc "$FONT_DEST/"
-chmod 644 "$FONT_DEST"/*
+
+# 复制字体
+#FONT_DEST="/usr/share/fonts/truetype/apple-fonts"
+#mkdir -p "$FONT_DEST"
+#cp -f /tmp/theme/fonts/*.ttf "$FONT_DEST/"
+#cp -f /tmp/theme/fonts/*.ttc "$FONT_DEST/"
+#chmod 644 "$FONT_DEST"/*
 #cat > /etc/fonts/conf.d/99-apple-fonts.conf <<EOF
 #<?xml version="1.0"?>
 #<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
@@ -60,6 +62,6 @@ chmod 644 "$FONT_DEST"/*
 #fc-cache -fv
 
 # 打入 xfce xml 配置
-#DEST="/home/kasm-default-profile/.config/xfce4/xfconf/xfce-perchannel-xml"
+#DEST="/home/kasm-kasm-default-profile/.config/xfce4/xfconf/xfce-perchannel-xml"
 #mkdir -p "$DEST"
-#cp -f /tmp/theme/xfce-config/*.xml "$DEST/"
+#cp -f /tmp/ui/xfce-.config/*.xml "$DEST/"

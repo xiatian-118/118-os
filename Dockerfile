@@ -12,10 +12,10 @@ COPY setup_env.sh /tmp/
 RUN chmod +x /tmp/setup_env.sh && /tmp/setup_env.sh && rm /tmp/setup_env.sh
 
 # 2. update UI
-COPY theme /tmp/theme
-RUN chmod +x /tmp/theme/install_theme.sh \
-    && /tmp/theme/install_theme.sh\
-    && rm -rf /tmp/theme
+COPY ui /tmp/ui
+RUN chmod +x /tmp/ui/install_ui.sh \
+    && /tmp/ui/install_ui.sh\
+    && rm -rf /tmp/ui
 
 # 3. install application
 
