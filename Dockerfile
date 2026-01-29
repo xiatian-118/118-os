@@ -7,8 +7,16 @@ ENV INST_SCRIPTS=$STARTUPDIR/install
 WORKDIR $HOME
 
 ######### Customize Container Here ###########
+# 1. update system
+RUN apt-get update && apt-get upgrade -y && rm -rf /var/lib/apt/lists/*
 
+# 2. update UI
+COPY theme /tmp/theme
+RUN chmod +x /tmp/theme/install_theme.sh \
+    && /tmp/theme/install_theme.sh\
+    && rm -rf /tmp/theme
 
+# 3. install application
 
 ######### End Customizations ###########
 
