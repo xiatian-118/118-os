@@ -10,6 +10,9 @@ cp -r /tmp/theme/Orchis-Dark/gtk-4.0/* /home/kasm-default-profile/.config/gtk-4.
 mkdir -p /usr/share/icons
 tar -xzvf /tmp/theme/icons.tar.gz -C /usr/share/icons/
 
+# 复制壁纸
+cp -rf /tmp/theme/wallpapers/* /usr/share/backgrounds/
+
 # 安装字体
 FONT_DEST="/usr/share/fonts/truetype/apple-fonts"
 mkdir -p "$FONT_DEST"
