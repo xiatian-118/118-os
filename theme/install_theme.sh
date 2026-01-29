@@ -13,6 +13,10 @@ tar -xzvf /tmp/theme/icons.tar.gz -C /usr/share/icons/
 # 复制壁纸
 cp -rf /tmp/theme/wallpapers/* /usr/share/backgrounds/
 
+# 用户配置
+mkdir - p /home/kasm-default-profile/.asset/
+cp -rf /tmp/theme/asset/* /home/kasm-default-profile/.asset/
+
 # 安装字体
 FONT_DEST="/usr/share/fonts/truetype/apple-fonts"
 mkdir -p "$FONT_DEST"
