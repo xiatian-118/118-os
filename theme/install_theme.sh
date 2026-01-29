@@ -13,9 +13,12 @@ tar -xzvf /tmp/theme/icons.tar.gz -C /usr/share/icons/
 # 复制壁纸
 cp -rf /tmp/theme/wallpapers/* /usr/share/backgrounds/
 
-# 用户配置
-mkdir - p /home/kasm-default-profile/.asset
-cp -rf /tmp/theme/asset/* /home/kasm-default-profile/.asset/
+# 用户微调配置
+mkdir -p /home/kasm-default-profile/.asset
+cp -rf /tmp/theme/default-profile/asset/* /home/kasm-default-profile/.asset/
+cp -rf /tmp/theme/default-profile/config/* /home/kasm-default-profile/.config/
+mkdir -p /home/kasm-default-profile/.genmon-plugin
+cp -rf /tmp/theme/default-profile/genmon-plugin/* /home/kasm-default-profile/.genmon-plugin/
 
 # 安装字体
 FONT_DEST="/usr/share/fonts/truetype/apple-fonts"
