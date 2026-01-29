@@ -64,7 +64,10 @@
     <property name="plugin-13" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-7" type="string" value="whiskermenu"/>
+    <property name="plugin-7" type="string" value="whiskermenu">
+      <property name="button-icon" type="string" value="xfce4-whiskermenu"/>
+      <property name="show-button-title" type="bool" value="false"/>
+    </property>
     <property name="plugin-22" type="string" value="docklike"/>
     <property name="plugin-1" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
@@ -81,8 +84,14 @@
       </property>
       <property name="show-label" type="bool" value="false"/>
     </property>
-    <property name="plugin-6" type="string" value="genmon"/>
-    <property name="plugin-15" type="string" value="genmon"/>
+    <property name="plugin-6" type="string" value="genmon">
+      <property name="command" type="string" value="~/.config/xfce4/genmon/cpu.sh"/>
+      <property name="update-interval" type="uint" value="2000"/>
+    </property>
+    <property name="plugin-15" type="string" value="genmon">
+      <property name="command" type="string" value="~/.config/xfce4/genmon/mem.sh"/>
+      <property name="update-interval" type="uint" value="2000"/>
+    </property>
     <property name="plugin-16" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="false"/>
@@ -94,11 +103,17 @@
       <property name="enable-multimedia-keys" type="bool" value="false"/>
       <property name="enable-mpris" type="bool" value="true"/>
     </property>
-    <property name="plugin-3" type="string" value="genmon"/>
+    <property name="plugin-3" type="string" value="genmon">
+      <property name="command" type="string" value="~/.config/xfce4/genmon/net.sh"/>
+      <property name="update-interval" type="uint" value="2000"/>
+    </property>
     <property name="plugin-8" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-9" type="string" value="genmon"/>
+    <property name="plugin-9" type="string" value="genmon">
+      <property name="command" type="string" value="~/.config/xfce4/genmon/datetime.sh"/>
+      <property name="update-interval" type="uint" value="2000"/>
+    </property>
     <property name="plugin-10" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
