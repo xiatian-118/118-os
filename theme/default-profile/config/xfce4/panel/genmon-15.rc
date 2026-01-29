@@ -1,4 +1,4 @@
-Command=/home/lsteam/.genmon-plugin/memory-panel.sh
+Command=/home/kasm-user/.genmon-plugin/memory-panel.sh
 UseLabel=0
 Text=RAM
 UpdatePeriod=30000
