@@ -60,6 +60,6 @@ chmod 644 "$FONT_DEST"/*
 #fc-cache -fv
 
 # 打入 xfce xml 配置
-DEST="/home/kasm-default-profile/.config/xfce4/xfconf/xfce-perchannel-xml"
-mkdir -p "$DEST"
-cp -f /tmp/theme/xfce-config/*.xml "$DEST/"
+#DEST="/home/kasm-default-profile/.config/xfce4/xfconf/xfce-perchannel-xml"
+#mkdir -p "$DEST"
+#cp -f /tmp/theme/xfce-config/*.xml "$DEST/"
