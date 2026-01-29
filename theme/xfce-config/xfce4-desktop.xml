@@ -104,7 +104,7 @@
     <property name="window-width" type="int" value="1280"/>
     <property name="window-height" type="int" value="1024"/>
   </property>
-  <property name="desktop-icons" type="empty">
+  <property name="desktop-icons" type="int" value="0">
     <property name="file-icons" type="empty">
       <property name="show-filesystem" type="bool" value="false"/>
       <property name="show-home" type="bool" value="false"/>
