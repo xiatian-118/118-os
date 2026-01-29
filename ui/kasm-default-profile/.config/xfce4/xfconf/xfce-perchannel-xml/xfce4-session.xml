@@ -34,6 +34,8 @@
   </property>
 </channel>
 
+<!--上面是kasm的配置，下面是主题的配置-->
+
 <!--<?xml version="1.0" encoding="UTF-8"?>-->
 
 <!--<channel name="xfce4-session" version="1.0">-->
