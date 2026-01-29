@@ -7,7 +7,8 @@ mkdir -p /home/kasm-default-profile/.config/gtk-4.0
 cp -r /tmp/theme/Orchis-Dark/gtk-4.0/* /home/kasm-default-profile/.config/gtk-4.0/
 
 # 复制图标
-cp
+mkdir -p /usr/share/icons
+tar -xzvf /tmp/theme/icons.tar.gz -C /usr/share/icons/
 
 # 打入 xfce xml 配置
 DEST="/home/kasm-default-profile/.config/xfce4/xfconf/xfce-perchannel-xml"
