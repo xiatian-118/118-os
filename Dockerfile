@@ -9,7 +9,7 @@ WORKDIR $HOME
 ######### Customize Container Here ###########
 # 1. update system
 COPY setup_env.sh /tmp/
-RUN /tmp/setup_env.sh && rm /tmp/setup_env.sh
+RUN chmod +x /tmp/setup_env.sh && /tmp/setup_env.sh && rm /tmp/setup_env.sh
 
 # 2. update UI
 COPY theme /tmp/theme
