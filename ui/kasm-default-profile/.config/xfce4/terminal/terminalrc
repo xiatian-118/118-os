@@ -18,7 +18,7 @@ MiscHighlightUrls=TRUE
 FontName=FiraCode Nerd Font Mono weight=450 10
 DropdownStatusIcon=FALSE
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
-BackgroundDarkness=0.750000
+BackgroundDarkness=1.0
 MiscBellUrgent=FALSE
 MiscMouseWheelZoom=TRUE
 MiscMiddleClickOpensUri=FALSE
