@@ -7,8 +7,8 @@ apt-get install -y --no-install-recommends \
     rsync \
     psmisc \
     xfconf \
-    xfce4-whiskermenu-plugin
-#    xfce4-docklike-plugin \
+    xfce4-whiskermenu-plugin \
+    xfce4-docklike-plugin
 #    xfce4-genmon-plugin
 
 apt-get clean
