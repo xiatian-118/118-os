@@ -1,6 +1,6 @@
 favorites=xfce4-web-browser.desktop,xfce4-mail-reader.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop,xfce-backdrop-settings.desktop
 recent=xfce4-terminal-emulator.desktop,xfce-ui-settings.desktop,Alacritty.desktop,gpick.desktop,lightdm-gtk-greeter-settings.desktop,spotify.desktop,org.gnome.FontManager.desktop,org.xfce.orage.desktop,galculator.desktop,mx-cleanup.desktop
-button-icon=/home/lsteam/components/windows-color.svg
+button-icon=/home/kasm-user/.asset/windows-color.svg
 button-single-row=true
 show-button-title=false
 show-button-icon=true
@@ -29,7 +29,7 @@ menu-opacity=0
 command-settings=xfce4-settings-manager
 show-command-settings=true
 command-lockscreen=xflock4
-show-command-lockscreen=true
+show-command-lockscreen=false
 command-switchuser=dm-tool switch-to-greeter
 show-command-switchuser=false
 command-logoutuser=xfce4-session-logout --logout --fast
@@ -43,7 +43,7 @@ show-command-suspend=false
 command-hibernate=xfce4-session-logout --hibernate
 show-command-hibernate=false
 command-logout=xfce4-session-logout
-show-command-logout=true
+show-command-logout=false
 command-menueditor=menulibre
 show-command-menueditor=false
 command-profile=mugshot
@@ -59,7 +59,7 @@ regex=false
 [action1]
 name=Search the Web
 pattern=?
-command=exo-open --launch WebBrowser https://duckduckgo.com/?q=%u
+command=exo-open --launch WebBrowser https://google.com/?q=%u
 regex=false
 
 [action2]
