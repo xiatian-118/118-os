@@ -6,10 +6,10 @@ KDP="/home/kasm-default-profile"
 TMP_UI="/tmp/ui"
 
 # 安装依赖
-cd "${TMP_UI}/deb"
-dpkg -i --force-depends xfce4-docklike-plugin_0.4.3-1_amd64.deb # 这里要求libxfce4windowing-0-0 >= 4.19.4 但我强制安装了
-ldconfig
-apt-mark hold xfce4-docklike-plugin
+#cd "${TMP_UI}/deb"
+#dpkg -i --force-depends xfce4-docklike-plugin_0.4.3-1_amd64.deb # 这里要求libxfce4windowing-0-0 >= 4.19.4 但我强制安装了
+#ldconfig
+#apt-mark hold xfce4-docklike-plugin
 
 # 创建目录
 mkdir -p "$KDP/.config"
