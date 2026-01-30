@@ -6,8 +6,8 @@ apt-get install -y --no-install-recommends \
     curl \
     rsync \
     psmisc \
-    xfconf
-#    xfce4-whiskermenu-plugin \
+    xfconf \
+    xfce4-whiskermenu-plugin
 #    xfce4-docklike-plugin \
 #    xfce4-genmon-plugin
 
