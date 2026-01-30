@@ -64,7 +64,7 @@
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-7" type="string" value="whiskermenu">
-      <property name="button-icon" type="string" value="xfce4-whiskermenu"/>
+      <property name="button-icon" type="string" value="/home/kasm-user/.asset/windows-color.svg"/>
       <property name="show-button-title" type="bool" value="false"/>
     </property>
     <property name="plugin-22" type="string" value="docklike"/>
