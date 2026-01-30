@@ -2,5 +2,5 @@ Command=/home/kasm-user/.genmon-plugin/disk-panel.sh
 UseLabel=0
 Text=Disk
 UpdatePeriod=30000
-Font=IBM Plex Sans 10
+Font=SF Pro 10
 

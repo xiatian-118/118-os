@@ -12,6 +12,7 @@ apt-get install -y --no-install-recommends \
     curl \
     rsync \
     psmisc \
+    bc \
     xfconf
 
 add-apt-repository -y ppa:xubuntu-dev/staging
