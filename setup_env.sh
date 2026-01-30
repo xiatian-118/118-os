@@ -9,7 +9,10 @@ apt-get install -y --no-install-recommends \
     xfconf \
     xfce4-whiskermenu-plugin \
     xfce4-docklike-plugin
-#    xfce4-genmon-plugin
 
 apt-get clean
 rm -rf /var/lib/apt/lists/*
+
+
+
+#    xfce4-genmon-plugin
