@@ -1,4 +1,4 @@
-favorites=xfce4-web-browser.desktop,xfce4-mail-reader.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop,xfce-backdrop-settings.desktop
+favorites=xfce4-web-browser.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop,xfce-backdrop-settings.desktop
 recent=xfce4-terminal-emulator.desktop,xfce-ui-settings.desktop,Alacritty.desktop,gpick.desktop,lightdm-gtk-greeter-settings.desktop,spotify.desktop,org.gnome.FontManager.desktop,org.xfce.orage.desktop,galculator.desktop,mx-cleanup.desktop
 button-icon=/home/kasm-user/.asset/windows-color.svg
 button-single-row=true
