@@ -8,7 +8,6 @@ WORKDIR $HOME
 
 ######### Customize Container Here ###########
 # 1. update system
-RUN apt-get update && apt-get upgrade -y
 COPY setup_env.sh /tmp/
 RUN chmod +x /tmp/setup_env.sh && /tmp/setup_env.sh && rm /tmp/setup_env.sh
 
