@@ -25,13 +25,20 @@ cp -af "$TMP_UI/wallpapers/." /usr/share/backgrounds/
 FONT_DEST="/usr/share/fonts/truetype/apple-fonts"
 mkdir -p "$FONT_DEST"
 cp -af "$TMP_UI/fonts/." "$FONT_DEST/"
-chmod 644 "$FONT_DEST"/*
+chmod 644 "$FONT_DEST/*"
 fc-cache -f
+
+apt-get update
+apt-get install -y --no-install-recommends \
+    xfce4-whiskermenu-plugin \
+    xfce4-docklike-plugin \
+    xfce4-genmon-plugin
+
 
 # 最后复制配置
 cp -af "$TMP_UI/kasm-default-profile/." "$KDP/"
 
-
+chown -R 1000:1000 "$KDP"
 # 确保 genmon 脚本具有执行权限
 #chmod +x "$KDP/.config/xfce4/genmon/"*.sh 2>/dev/null || true
 
