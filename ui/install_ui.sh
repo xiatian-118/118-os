@@ -35,9 +35,6 @@ fc-cache -f
 # 最后复制配置
 cp -af "$TMP_UI/kasm-default-profile/." "$KDP/"
 
-chown -R 1000:1000 "$KDP"
-# 确保 genmon 脚本具有执行权限
-#chmod +x "$KDP/.config/xfce4/genmon/"*.sh 2>/dev/null || true
 
 
 
