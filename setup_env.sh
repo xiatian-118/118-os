@@ -10,7 +10,8 @@ apt-get install -y --no-install-recommends \
     rsync \
     psmisc \
     xfconf \
-    xfce4-whiskermenu-plugin
+    xfce4-whiskermenu-plugin \
+    libxfce4windowing-0-0
 
 apt-get clean
 rm -rf /var/lib/apt/lists/*
