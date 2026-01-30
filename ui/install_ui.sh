@@ -25,9 +25,9 @@ cp -af "$TMP_UI/wallpapers/." /usr/share/backgrounds/
 FONT_DEST="/usr/share/fonts/truetype/apple-fonts"
 mkdir -p "$FONT_DEST"
 cp -af "$TMP_UI/fonts/." "$FONT_DEST/"
-chown -R root:root "$FONT_DEST"
-find "$FONT_DEST" -type d -exec chmod 755 {} +
-find "$FONT_DEST" -type f -exec chmod 644 {} +
+#chown -R root:root "$FONT_DEST"
+#find "$FONT_DEST" -type d -exec chmod 755 {} +
+#find "$FONT_DEST" -type f -exec chmod 644 {} +
 fc-cache -f
 
 
