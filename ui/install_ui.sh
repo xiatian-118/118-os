@@ -28,11 +28,6 @@ cp -af "$TMP_UI/fonts/." "$FONT_DEST/"
 chmod 644 "$FONT_DEST/*"
 fc-cache -f
 
-apt-get update
-apt-get install -y --no-install-recommends \
-    xfce4-whiskermenu-plugin \
-    xfce4-docklike-plugin \
-    xfce4-genmon-plugin
 
 
 # 最后复制配置
