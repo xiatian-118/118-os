@@ -7,16 +7,13 @@ TMP_UI="/tmp/ui"
 
 # 安装依赖
 cd "${TMP_UI}/deb"
-dpkg -i libdisplay-info3_0.3.0-1_amd64.deb
-dpkg -i libxfce4windowing-common_4.20.5-1_all.deb
-dpkg -i --force-depends libxfce4windowing-0-0_4.20.5-1_amd64.deb
-dpkg -i --force-depends xfce4-docklike-plugin_0.5.0-1_amd64.deb
+#dpkg -i libdisplay-info3_0.3.0-1_amd64.deb
+#dpkg -i libxfce4windowing-common_4.20.5-1_all.deb
+#dpkg -i --force-depends libxfce4windowing-0-0_4.20.5-1_amd64.deb
+#dpkg -i --force-depends xfce4-docklike-plugin_0.5.0-1_amd64.deb
+dpkg -i --force-depends xfce4-docklike-plugin_0.4.3-1_amd64.deb
 ldconfig
 apt-mark hold xfce4-docklike-plugin
-apt-mark hold libxfce4windowing-0-0
-apt-mark hold libxfce4windowing-common
-apt-mark hold libdisplay-info3
-
 
 
 
