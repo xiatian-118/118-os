@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -ex
 
-apt-get update
-
 apt-get install -y --no-install-recommends \
     git \
     curl \
@@ -12,5 +10,6 @@ apt-get install -y --no-install-recommends \
 #    xfce4-whiskermenu-plugin \
 #    xfce4-docklike-plugin \
 #    xfce4-genmon-plugin
+
 apt-get clean
 rm -rf /var/lib/apt/lists/*
